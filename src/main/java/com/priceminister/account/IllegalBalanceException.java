@@ -11,7 +11,5 @@ public class IllegalBalanceException extends Exception {
         balance = illegalBalance;
     }
     
-    public String toString() {
-        return "Illegal account balance: " + balance;
-    }
+    public String toString() {return "Illegal account balance: " + balance;}
 }

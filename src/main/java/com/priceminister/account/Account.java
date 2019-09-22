@@ -9,8 +9,9 @@ public interface Account {
     /**
      * Adds money to this account.
      * @param addedAmount - the money to add
+     * @throws NegativeAmountException if the addedAmount is negative
      */
-    public void add(Double addedAmount);
+    public void add(Double addedAmount) throws NegativeAmountException;
     
     /**
      * Withdraws money from the account.
@@ -18,8 +19,9 @@ public interface Account {
      * @param rule - the AccountRule that defines which balance is allowed for this account
      * @return the remaining account balance
      * @throws IllegalBalanceException if the withdrawal leaves the account with a forbidden balance
+     * @throws NegativeAmountException if the withdrawalAmount is negative
      */
-    public Double withdrawAndReportBalance(Double withdrawnAmount, AccountRule rule) throws IllegalBalanceException;
+    public Double withdrawAndReportBalance(Double withdrawnAmount, AccountRule rule) throws IllegalBalanceException, NegativeAmountException;
     
     /**
      * Gets the current account balance.
