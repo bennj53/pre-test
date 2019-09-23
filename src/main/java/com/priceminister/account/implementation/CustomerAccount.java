@@ -11,28 +11,26 @@ public class CustomerAccount implements Account {
         this.balance = 0.0;
     }
 
-    public CustomerAccount(Double addedAmount) throws NegativeAmountException {
+    public CustomerAccount(Double addedAmount) throws IllegalAmountException {
         this();
         this.add(addedAmount);
     }
 
-    public void add(Double addedAmount) throws NegativeAmountException {
-        if (addedAmount>=0){
+    public void add(Double addedAmount) throws IllegalAmountException {
+        if (addedAmount != null && addedAmount>=0){
             this.balance+=addedAmount;
         }else{
-            throw new NegativeAmountException(addedAmount);
+            throw new IllegalAmountException(addedAmount);
         }
 
     }
 
-    public Double getBalance() {
-        return balance;
-    }
+    public Double getBalance() { return balance; }
 
     public Double withdrawAndReportBalance(Double withdrawnAmount, AccountRule rule) 
-    		throws IllegalBalanceException, NegativeAmountException {
+    		throws IllegalBalanceException, IllegalAmountException {
 
-        if (withdrawnAmount>=0){
+        if (withdrawnAmount != null && withdrawnAmount>=0){
             Double newBalance = this.balance - withdrawnAmount;
             if (rule.withdrawPermitted(newBalance)){
                 this.balance-= withdrawnAmount;
@@ -40,7 +38,7 @@ public class CustomerAccount implements Account {
                 throw new IllegalBalanceException(newBalance);
             }
         }else{
-            throw new NegativeAmountException(withdrawnAmount);
+            throw new IllegalAmountException(withdrawnAmount);
         }
 
         return this.balance;

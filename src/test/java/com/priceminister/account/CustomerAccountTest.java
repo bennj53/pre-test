@@ -8,8 +8,6 @@ import org.junit.*;
 import com.priceminister.account.implementation.*;
 import org.junit.rules.ExpectedException;
 
-import java.math.BigDecimal;
-
 
 /**
  * Please create the business code, starting from the unit tests below.
@@ -34,7 +32,10 @@ public class CustomerAccountTest {
         customerAccount = new CustomerAccount();
         rule = new CustomerAccountRule();
     }
-    
+
+    @Rule
+    public ExpectedException exceptionRule = ExpectedException.none();
+
     /**
      * Tests that an empty account always has a balance of 0.0, not a NULL.
      */
@@ -48,129 +49,169 @@ public class CustomerAccountTest {
      * Adds money to the account and checks that the new balance is as expected.
      */
     @Test
-    public void testAddPositiveAmount() throws NegativeAmountException{
-        Double amount = 100.0000012345678910;
-        customerAccount.add(amount);
+    public void testAddPositiveAmount() throws IllegalAmountException {
+        customerAccount.add(100.99);
         Double balance = customerAccount.getBalance();
 
-        assertEquals(amount,balance,0);
-
+        assertEquals(100.99,balance,0);
     }
-
-    @Rule
-    public ExpectedException exceptionRule = ExpectedException.none();
 
     /**
      * Tests that an illegal withdrawal throws the expected exception.
      * Use the logic contained in CustomerAccountRule; feel free to refactor the existing code.
      */
     @Test
-    public void testWithdrawAndReportBalanceIllegalBalance() throws IllegalBalanceException, NegativeAmountException{
+    public void testWithdrawAndReportBalanceIllegalBalance() throws IllegalBalanceException, IllegalAmountException {
         exceptionRule.expect(IllegalBalanceException.class);
-        //exceptionRule.expectMessage("Illegal account balance: ");
-
-        Double amount = 100.0;
-        customerAccount.withdrawAndReportBalance(amount, rule);
-
+        customerAccount.withdrawAndReportBalance(100.0, rule);
     }
     
     // Also implement missing unit tests for the above functionalities.
 
     /**
-     * Tests Account constructor with parameter to add money to the account and checks that the new balance is as expected.
+     * Tests Account constructor with parameter to add money to the account
+     * and checks that the new balance is as expected.
      *
      */
     @Test
-    public void testAccountCreationWithAddedAmount() throws NegativeAmountException {
-        Double addedAmount = 500.00;
-        Account customerAccount = new CustomerAccount(addedAmount);
+    public void testAccountCreationWithPositiveAmountAdded() throws IllegalAmountException {
+        Account customerAccount = new CustomerAccount(500.00);
         Double balance = customerAccount.getBalance();
 
-        assertEquals(addedAmount, balance, 0);
+        assertEquals(500.00, balance, 0);
     }
 
     /**
-     * Tests Account constructor with parameter to add money to the account and checks that the new balance is as expected.
-     * Tests that an negative amount throws the expected exception.
+     * Tests Account constructor with parameter to add negative amount to the account
+     * and checks that an negative amount throws the expected exception.
      */
     @Test
-    public void testAccountCreationWithIllegalAddedAmount() throws NegativeAmountException {
-        exceptionRule.expect(NegativeAmountException.class);
-
-        Double addedAmount = -500.00;
-        Account customerAccount = new CustomerAccount(addedAmount);
+    public void testAccountCreationWithNegativeAmountAdded() throws IllegalAmountException {
+        exceptionRule.expect(IllegalAmountException.class);
+        new CustomerAccount(-500.00);
     }
 
     /**
-     * Tests that an negative amount throws the expected exception.
-     * Adds money to the account and checks that the new balance is as expected.
+     * Tests Account constructor with parameter to add 0 amount to the account
+     * and checks that the new balance is as expected.
      */
     @Test
-    public void testAddNegativeAmount() throws NegativeAmountException{
-        exceptionRule.expect(NegativeAmountException.class);
+    public void testAccountCreationWithZeroAmountAdded() throws IllegalAmountException {
+        Account customerAccount = new CustomerAccount(0.0);
+        Double balance = customerAccount.getBalance();
 
-        Double amount = -100.00;
-        customerAccount.add(amount);
-
-    }
-
-    @Test
-    public void testAddAmountZero() throws NegativeAmountException{
-        Double amount = 0.00;
-        customerAccount.add(amount);
-
-        assertEquals(0.00, customerAccount.getBalance(),0);
-
+        assertEquals(0.0, balance, 0);
     }
 
     /**
-     * Tests that an illegal withdrawal throws the expected exception.
-     * Use the logic contained in CustomerAccountRule; feel free to refactor the existing code.
+     * Tests Account constructor with parameter to add null amount to the account
+     * and checks that an null amount throws the expected exception.
      */
     @Test
-    public void testWithdrawAndReportBalanceNegativeAmount() throws IllegalBalanceException, NegativeAmountException{
-        exceptionRule.expect(NegativeAmountException.class);
-
-        Double amount = -100.0;
-        Double balance = customerAccount.withdrawAndReportBalance(amount, rule);
-
+    public void testAccountCreationWithNullAmountAdded() throws IllegalAmountException {
+        exceptionRule.expect(IllegalAmountException.class);
+        new CustomerAccount(null);
     }
 
+    /**
+     * Tests that adds an negative amount throws the expected exception.
+     *
+     */
     @Test
-    public void testWithdrawAndReportBalancePositiveAmount() throws IllegalBalanceException, NegativeAmountException{
+    public void testAddNegativeAmount() throws IllegalAmountException {
+        exceptionRule.expect(IllegalAmountException.class);
+        customerAccount.add(-100.00);
+    }
+
+    /**
+     * Tests that adds zero to the account and checks that the new balance is as expected.
+     */
+    @Test
+    public void testAddZeroAmount() throws IllegalAmountException {
+        customerAccount.add(50.00);
+        customerAccount.add(0.00);
+
+        assertEquals(50.00, customerAccount.getBalance(),0);
+    }
+
+    /**
+     * Tests that adds null amount throws the expected exception.
+     *
+     */
+    @Test
+    public void testAddNullAmount() throws IllegalAmountException {
+        exceptionRule.expect(IllegalAmountException.class);
+        customerAccount.add(null);
+    }
+
+    /**
+     * Tests that withdraw a negative amount throws the expected exception.
+     *
+     */
+    @Test
+    public void testWithdrawNegativeAmountAndReportBalance() throws IllegalBalanceException, IllegalAmountException {
+        exceptionRule.expect(IllegalAmountException.class);
+        customerAccount.withdrawAndReportBalance(-100.0, rule);
+    }
+
+    /**
+     * Tests that withdraw positive amount to the account
+     * and checks that the new balance is as expected.
+     *
+     */
+    @Test
+    public void testWithdrawPositiveAmountAndReportBalance() throws IllegalBalanceException, IllegalAmountException {
         customerAccount.add(100.50);
-        Double amount = 50.25;
-        Double balance = customerAccount.withdrawAndReportBalance(amount, rule);
+        Double balance = customerAccount.withdrawAndReportBalance(50.25, rule);
 
         assertEquals(50.25,balance,0);
     }
 
+    /**
+     * Tests that withdraw zero to the account and checks that the new balance is as expected.
+     */
     @Test
-    public void testWithdrawAndReportBalanceZero() throws IllegalBalanceException, NegativeAmountException{
-        Double amount = 0.0;
-        Double balance = customerAccount.withdrawAndReportBalance(amount, rule);
+    public void testWithdrawZeroAmountAndReportBalance() throws IllegalBalanceException, IllegalAmountException {
+        customerAccount.add(100.90);
+        Double balance = customerAccount.withdrawAndReportBalance(0.0, rule);
 
-        assertEquals(amount,balance,0);
+        assertEquals(100.90,balance,0);
     }
 
-    /*    *//**
-     * Adds money to the account and checks that the new balance is as expected.
-     *//*
-    @Test
-    public void testPrecisionAddPositiveAmount() {
-        Double  cashInflow  =  1.2 ;
 
-        for ( int  i  =  0 ; i  <  100 ; i ++ ) {
+    /**
+     * Tests that withdraw null amount throws the expected exception.
+     *
+     */
+    @Test
+    public void testWithdrawNullAmount() throws IllegalBalanceException, IllegalAmountException {
+        exceptionRule.expect(IllegalAmountException.class);
+        customerAccount.add(100.50);
+        customerAccount.withdrawAndReportBalance(null, rule);
+    }
+
+
+    /**
+     *
+     * Adds a lot of amounts with decimals to the account and checks that the new balance is as expected.
+     */
+    @Test
+    public void testPrecisionAddPositiveAmount() throws IllegalAmountException {
+        Double  cashInflow  =  1.2 ;
+        Double expectedResult = 12.0 ;
+
+        for ( int  i  =  0 ; i  <  10 ; i ++ ) {
             customerAccount.add(cashInflow);
         }
-
         Double balance = customerAccount.getBalance();
 
-        Double expectedResult = 120.0 ;
+        assertEquals(expectedResult,balance,0.001);
+        /*@TODO: 23/09/2019  :If necessary increase precision
+                 ,using BigDecimal type instead of Double.
+                 Warning, using BigDecimal reduce performance
+        */
 
-        assertEquals(expectedResult,balance,0);
-
-    }*/
+    }
 
 
 }

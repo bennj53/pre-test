@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="56a09af6-d2f6-48c8-9185-0af29b4d0b9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/priceminister/account/NegativeAmountException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pretest-tdd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pretest-tdd.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/priceminister/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/priceminister/account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/priceminister/account/IllegalBalanceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/priceminister/account/IllegalBalanceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/priceminister/account/NegativeAmountException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/priceminister/account/IllegalAmountException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/priceminister/account/implementation/CustomerAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/priceminister/account/implementation/CustomerAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/priceminister/account/CustomerAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/priceminister/account/CustomerAccountTest.java" afterDir="false" />
     </list>
@@ -22,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/implementation/CustomerAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            <state relative-caret-position="255">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding>
                 <element signature="e#197#198#0" expanded="true" />
                 <element signature="e#231#232#0" expanded="true" />
@@ -36,32 +44,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="24" column="49" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/implementation/CustomerAccountRule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="102">
               <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/runners/ParentRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4842">
-              <caret line="316" selection-start-line="316" selection-end-line="316" />
-              <folding>
-                <element signature="e#2542#2543#0" expanded="true" />
-                <element signature="e#2586#2587#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/priceminister/account/CustomerAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="93" column="6" lean-forward="true" selection-start-line="93" selection-start-column="6" selection-end-line="93" selection-end-column="6" />
+            <state relative-caret-position="265">
+              <caret line="210" column="42" selection-start-line="210" selection-start-column="42" selection-end-line="210" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state relative-caret-position="255">
+              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -81,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/IllegalBalanceException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="153">
               <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
               <folding>
                 <element signature="e#304#305#0" expanded="true" />
@@ -93,35 +97,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/AccountRule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="85">
               <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/NegativeAmountException.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/IllegalAmountException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
+            <state relative-caret-position="34">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/runner/JUnitCore.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2538">
-              <caret line="165" column="5" selection-start-line="165" selection-start-column="5" selection-end-line="165" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+              <folding>
+                <element signature="e#243#244#0" expanded="true" />
+                <element signature="e#281#282#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,13 +131,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/priceminister/account/utils/NumberFormater.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/priceminister/account/IllegalBalanceException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/priceminister/account/NegativeAmountException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/priceminister/account/IllegalAmountException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/priceminister/account/Account.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/priceminister/account/implementation/CustomerAccount.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/priceminister/account/CustomerAccountTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/priceminister/account/implementation/CustomerAccount.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -174,33 +165,17 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/pretest-tdd.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="853" />
-    <option name="width" value="1482" />
-    <option name="height" value="1407" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-14" />
+    <option name="y" value="-14" />
+    <option name="width" value="1852" />
+    <option name="height" value="2763" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,9 +243,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -303,7 +281,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerAccountTest.testAccountCreationWithAddedAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerAccountTest.testAccountCreationWithAmountAdded" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pretest-tdd" />
       <extension name="coverage">
         <pattern>
@@ -313,13 +291,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.priceminister.account" />
       <option name="MAIN_CLASS_NAME" value="com.priceminister.account.CustomerAccountTest" />
-      <option name="METHOD_NAME" value="testAccountCreationWithAddedAmount" />
+      <option name="METHOD_NAME" value="testAccountCreationWithAmountAdded" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerAccountTest.testAddNegativeAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerAccountTest.testAddZeroAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pretest-tdd" />
       <extension name="coverage">
         <pattern>
@@ -329,7 +307,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.priceminister.account" />
       <option name="MAIN_CLASS_NAME" value="com.priceminister.account.CustomerAccountTest" />
-      <option name="METHOD_NAME" value="testAddNegativeAmount" />
+      <option name="METHOD_NAME" value="testAddZeroAmount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -351,7 +329,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerAccountTest.testWithdrawAndReportBalanceIllegalBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerAccountTest.testWithdrawZeroAmountAndReportBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pretest-tdd" />
       <extension name="coverage">
         <pattern>
@@ -361,7 +339,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.priceminister.account" />
       <option name="MAIN_CLASS_NAME" value="com.priceminister.account.CustomerAccountTest" />
-      <option name="METHOD_NAME" value="testWithdrawAndReportBalanceIllegalBalance" />
+      <option name="METHOD_NAME" value="testWithdrawZeroAmountAndReportBalance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -370,10 +348,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CustomerAccountTest" />
-        <item itemvalue="JUnit.CustomerAccountTest.testAccountCreationWithAddedAmount" />
-        <item itemvalue="JUnit.CustomerAccountTest.testAddNegativeAmount" />
         <item itemvalue="JUnit.CustomerAccountTest.testPrecisionAddPositiveAmount" />
-        <item itemvalue="JUnit.CustomerAccountTest.testWithdrawAndReportBalanceIllegalBalance" />
+        <item itemvalue="JUnit.CustomerAccountTest.testAddZeroAmount" />
+        <item itemvalue="JUnit.CustomerAccountTest.testWithdrawZeroAmountAndReportBalance" />
+        <item itemvalue="JUnit.CustomerAccountTest.testAccountCreationWithAmountAdded" />
       </list>
     </recent_temporary>
   </component>
@@ -391,43 +369,51 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomerAccountTest - 2019.09.22 at 00h 11m 28s.xml">
+    <history-entry file="CustomerAccountTest - 2019.09.23 at 12h 00m 54s.xml">
       <configuration name="CustomerAccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerAccountTest_testAccountCreationWithAddedAmount - 2019.09.22 at 00h 19m 16s.xml">
-      <configuration name="CustomerAccountTest.testAccountCreationWithAddedAmount" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerAccountTest_testAccountCreationWithAddedAmount - 2019.09.22 at 00h 19m 47s.xml">
-      <configuration name="CustomerAccountTest.testAccountCreationWithAddedAmount" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerAccountTest_testAccountCreationWithAddedAmount - 2019.09.22 at 00h 21m 08s.xml">
-      <configuration name="CustomerAccountTest.testAccountCreationWithAddedAmount" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerAccountTest - 2019.09.22 at 00h 21m 14s.xml">
+    <history-entry file="CustomerAccountTest - 2019.09.23 at 12h 07m 45s.xml">
       <configuration name="CustomerAccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerAccountTest - 2019.09.22 at 00h 23m 09s.xml">
+    <history-entry file="CustomerAccountTest - 2019.09.23 at 12h 22m 07s.xml">
       <configuration name="CustomerAccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerAccountTest - 2019.09.22 at 00h 23m 33s.xml">
+    <history-entry file="CustomerAccountTest_testWithdrawZeroAmountAndReportBalance - 2019.09.23 at 12h 25m 21s.xml">
+      <configuration name="CustomerAccountTest.testWithdrawZeroAmountAndReportBalance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerAccountTest_testAddZeroAmount - 2019.09.23 at 12h 27m 14s.xml">
+      <configuration name="CustomerAccountTest.testAddZeroAmount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerAccountTest_testPrecisionAddPositiveAmount - 2019.09.23 at 12h 30m 55s.xml">
+      <configuration name="CustomerAccountTest.testPrecisionAddPositiveAmount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerAccountTest_testPrecisionAddPositiveAmount - 2019.09.23 at 12h 31m 28s.xml">
+      <configuration name="CustomerAccountTest.testPrecisionAddPositiveAmount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerAccountTest - 2019.09.23 at 12h 33m 39s.xml">
       <configuration name="CustomerAccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerAccountTest - 2019.09.22 at 00h 35m 54s.xml">
-      <configuration name="CustomerAccountTest" configurationId="JUnit" />
+    <history-entry file="CustomerAccountTest_testPrecisionAddPositiveAmount - 2019.09.23 at 12h 41m 40s.xml">
+      <configuration name="CustomerAccountTest.testPrecisionAddPositiveAmount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerAccountTest - 2019.09.22 at 00h 38m 13s.xml">
-      <configuration name="CustomerAccountTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerAccountTest - 2019.09.22 at 00h 40m 56s.xml">
+    <history-entry file="CustomerAccountTest - 2019.09.23 at 14h 46m 01s.xml">
       <configuration name="CustomerAccountTest" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="853" y="0" width="1482" height="1407" extended-state="0" />
-    <editor active="true" />
+    <frame x="-6" y="-6" width="1228" height="793" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.314346" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6704036" visible="true" weight="0.306314" />
+      <window_info id="Structure" order="1" sideWeight="0.3295964" side_tool="true" visible="true" weight="0.306314" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -435,12 +421,12 @@
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298193" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32831326" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39952904" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3298193" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32967034" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -449,144 +435,32 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.32911393" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.3284983" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/priceminister/account/implementation/CustomerAccount.java</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/priceminister/account/implementation/CustomerAccount.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties" />
     <entry file="file://$PROJECT_DIR$/pretest-tdd.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/runners/statements/ExpectException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/Assert.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/runners/statements/ExpectException.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/utils/NumberFormater.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#1317#1512#0" expanded="true" />
-            <element signature="e#1511#1512#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/runners/statements/RunBefores.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/runners/statements/InvokeMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/rules/ExpectedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2772">
-          <caret line="178" selection-start-line="178" selection-end-line="178" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/rules/RunRules.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4842">
-          <caret line="316" selection-start-line="316" selection-end-line="316" />
-          <folding>
-            <element signature="e#2542#2543#0" expanded="true" />
-            <element signature="e#2586#2587#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/runner/JUnitCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2538">
-          <caret line="165" column="5" selection-start-line="165" selection-start-column="5" selection-end-line="165" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/AccountRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/runners/model/FrameworkMethod.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/runners/statements/RunBefores.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/runners/statements/InvokeMethod.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/rules/ExpectedException.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/rules/RunRules.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/runners/ParentRunner.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/runner/JUnitCore.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/IllegalBalanceException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="153">
           <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
           <folding>
             <element signature="e#304#305#0" expanded="true" />
@@ -594,44 +468,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/NegativeAmountException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/IllegalAmountException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
+        <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/implementation/CustomerAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/implementation/CustomerAccountRule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="102">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/priceminister/account/CustomerAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="93" column="6" lean-forward="true" selection-start-line="93" selection-start-column="6" selection-end-line="93" selection-end-column="6" />
+        <state relative-caret-position="265">
+          <caret line="210" column="42" selection-start-line="210" selection-start-column="42" selection-end-line="210" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/AccountRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/priceminister/account/implementation/CustomerAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
           </folding>
         </state>
       </provider>
